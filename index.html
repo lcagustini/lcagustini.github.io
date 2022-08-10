@@ -16,7 +16,7 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
         <!-- Theme CSS -->
-        <link href="css/freelancer.min.css" rel="stylesheet">
+        <link href="css/freelancer.css" rel="stylesheet">
 
     </head>
 
@@ -25,7 +25,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">Lucas Cunha Agustini</a>
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Lucas</a>
                 <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -48,26 +48,27 @@
 
         <!-- Masthead -->
         <header class="masthead bg-primary text-white text-center">
-            <div class="container d-flex align-items-center flex-column">
+            <div class="container d-flex align-items-center flex-row">
 
                 <!-- Masthead Avatar Image -->
-                <img class="masthead-avatar mb-5" src="img/avataaars.svg" alt="">
+                <img class="masthead-avatar ml-1 mr-4" src="img/avataaars.svg" alt="">
 
-                <!-- Masthead Heading -->
-                <h1 class="masthead-heading text-uppercase mb-0">Lucas Cunha Agustini</h1>
+		<div class="d-flex flex-column">
+			<!-- Masthead Heading -->
+			<h1 class="masthead-heading text-uppercase mb-0">Lucas Cunha Agustini</h1>
 
-                <!-- Icon Divider -->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon">
-                        <i class="fas fa-angle-double-down"></i>
-                    </div>
-                    <div class="divider-custom-line"></div>
-                </div>
+			<!-- Icon Divider -->
+			<div class="divider-custom divider-light">
+				<div class="divider-custom-line"></div>
+				<div class="divider-custom-icon">
+					<i class="fas fa-angle-double-down"></i>
+				</div>
+				<div class="divider-custom-line"></div>
+			</div>
 
-                <!-- Masthead Subheading -->
-                <p class="masthead-subheading font-weight-light mb-0">Console Programmer - Gameplay Developer</p>
-
+			<!-- Masthead Subheading -->
+			<p class="masthead-subheading font-weight-light mb-0">Game Developer</p>
+		</div>
             </div>
         </header>
 
@@ -78,6 +79,10 @@
                 <!-- Portfolio Section Heading -->
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
 
+                <!-- Game Grid Items -->
+                <br>
+                <h3 class="text-center mb-0">Released Games</h3>
+
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                     <div class="divider-custom-line"></div>
@@ -87,11 +92,41 @@
                     <div class="divider-custom-line"></div>
                 </div>
 
+                <div class="row mb-3">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#rGameModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">
+                                    <i class="fas fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img class="img-fluid" src="img/portfolio/spacelines.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-8 d-flex flex-column justify-content-center">
+			<h2 class="text-secondary text-uppercase mb-2">Spacelines from the Far Out</h2>
+			<p>Desc</p>
+                    </div>
+                </div>
+
                 <!-- Game Grid Items -->
-                <h3 class="text-center mb-0">Games</h3>
                 <br>
-                <div class="row">
-                    <!-- Portfolio Item 1 -->
+                <h3 class="text-center mb-0">Other Games</h3>
+
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                        <i class="fas fa-dice-d6"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6 col-lg-8 d-flex flex-column justify-content-center">
+			<h2 class="text-secondary text-uppercase mb-2">Inkrivel</h2>
+			<p>Inkrivel is a paint shooter game, on which teams compete to paint the most of the map. It is online multiplayer, made with a completely custom engine, which uses OpenGL for graphics rendering and Linux syscalls to communicate between client and server.</p>
+                    </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#gameModal1">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -101,7 +136,11 @@
                             </div>
                             <img class="img-fluid" src="img/portfolio/inkrivel.png" alt="">
                         </div>
+                    </div>
+                </div>
 
+                <div class="row mb-3">
+                    <div class="col-md-6 col-lg-4">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#gameModal2">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white">
@@ -111,8 +150,17 @@
                             <img class="img-fluid" src="img/portfolio/hexis.png" alt="">
                         </div>
                     </div>
+                    <div class="col-md-6 col-lg-8 d-flex flex-column justify-content-center">
+			<h2 class="text-secondary text-uppercase mb-2">Hexis</h2>
+			<p>Hexis is a tetris clone for the Game Boy Advance. It has most features expected from such a game, like hold and next pieces. Also, it was made completely in ARM assembly and uses the console hardware features directly.</p>
+                    </div>
+                </div>
 
-                    <!-- Portfolio Item 2 -->
+                <div class="row mb-3">
+                    <div class="col-md-6 col-lg-8 d-flex flex-column justify-content-center">
+			<h2 class="text-secondary text-uppercase mb-2">Buzzfall</h2>
+			    <p>Buzzfall is a NES (Nintendo Entertainment System) game made in pure 6502 assembly. It is a simple Towerfall clone where two players kill each other with a limited supply of arrows. They can wall-jump and grab arrows stuck on the walls or on the ground.</p>
+                    </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#gameModal3">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -122,7 +170,11 @@
                             </div>
                             <img class="img-fluid" src="img/portfolio/buzzfall.png" alt="">
                         </div>
+                    </div>
+                </div>
 
+                <div class="row mb-3">
+                    <div class="col-md-6 col-lg-4">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#gameModal4">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white">
@@ -132,8 +184,17 @@
                             <img class="img-fluid" src="img/portfolio/lumos.png" alt="">
                         </div>
                     </div>
+                    <div class="col-md-6 col-lg-8 d-flex flex-column justify-content-center">
+			<h2 class="text-secondary text-uppercase mb-2">Lumos</h2>
+			    <p>Lumos is a Game Boy Advance created at the Meeting Game Jam. It is a 2D adventure game in which you charge up your mana by sucking the flame out of candles and then use magic spells to kill monsters.</p>
+                    </div>
+                </div>
 
-                    <!-- Portfolio Item 3 -->
+                <div class="row mb-3">
+                    <div class="col-md-6 col-lg-8 d-flex flex-column justify-content-center">
+			<h2 class="text-secondary text-uppercase mb-2">Medieval Defense</h2>
+			    <p>Medieval Defense is a competitive tower-defense game, in which you can spend money to buy new towers to protect yourself or buy monsters that go attack your enemy. The game was made for the Nintendo DS so that each screen can show one player's battlefield. It also comes with a server to enable online play.</p>
+                    </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#gameModal5">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -145,10 +206,21 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Emulators Grid Items -->
-                <h3 class="text-center mb-0">Emulators</h3>
                 <br>
-                <div class="row">
+                <h3 class="text-center mb-0">Emulators</h3>
+
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
+                <div class="row mb-3">
                     <div class="col-md-6 col-lg-4">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#emulatorModal1">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -158,6 +230,17 @@
                             </div>
                             <img class="img-fluid" src="img/portfolio/irongb.png" alt="">
                         </div>
+                    </div>
+                    <div class="col-md-6 col-lg-8 d-flex flex-column justify-content-center">
+			<h2 class="text-secondary text-uppercase mb-2">IronGB</h2>
+                            <p>IronGB is an original GameBoy emulator. It emulates the CPU (an 8 bit processor) with an interpreter approach, while also emulating the PPU (the chip that deals with drawing to the screen) all through software.</p>
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-6 col-lg-8 d-flex flex-column justify-content-center">
+			<h2 class="text-secondary text-uppercase mb-2">N.E.S. - Nosso Emulador Supimpa</h2>
+                            <p>N.E.S. is a Nintendo Entertainment System emulator, which emulates the CPU with an interpreter and the PPU via software only. It has pretty good compatibility, although limited in scope by not implementing mappers, which were common on NES cartridges.</p>
                     </div>
                     <div class="col-md-6 col-lg-4">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#emulatorModal2">
@@ -233,7 +316,7 @@
 
                 <!-- Contact Section Info -->
                 <div class="row">
-                    <div class="col-lg-6 ml-auto">
+                    <div class="col-3 ml-auto">
                         <div class="divider-custom">
                             <div class="divider-custom-icon">
                                 <i class="fas fa-envelope"></i>
@@ -241,7 +324,7 @@
                         </div>
                         <p class="lead text-center">lucas.c.agustini@gmail.com</p>
                     </div>
-                    <div class="col-lg-6 ml-auto">
+                    <div class="col-3 ml-auto">
                         <div class="divider-custom">
                             <div class="divider-custom-icon">
                                 <i class="fab fa-telegram"></i>
@@ -249,37 +332,33 @@
                         </div>
                         <p class="lead text-center">@lucascagustini</p>
                     </div>
+                    <div class="col-3 ml-auto">
+                        <div class="divider-custom">
+                            <div class="divider-custom-icon">
+			        <i class="fab fa-fw fa-github"></i>
+                            </div>
+                        </div>
+			<a href="https://github.com/lcagustini"><p class="lead text-center">GitHub</p></a>
+                    </div>
+                    <div class="col-3 ml-auto">
+                        <div class="divider-custom">
+                            <div class="divider-custom-icon">
+                                <i class="fab fa-fw fa-linkedin-in"></i>
+                            </div>
+                        </div>
+			<a href="https://www.linkedin.com/in/lucas-agustini-486605154/"><p class="lead text-center">LinkedIn</p></a>
+                    </div>
                 </div>
 
             </div>
         </section>
 
         <!-- Footer -->
-        <footer class="footer text-center">
+        <footer class="footer copyright py-4 text-center text-white">
             <div class="container">
-                <div class="row">
-
-                    <!-- Footer Social Icons -->
-                    <div class="col-lg-12 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Around the Web</h4>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/lcagustini/">
-                            <i class="fab fa-fw fa-github"></i>
-                        </a>
-                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/lucas-agustini-486605154/">
-                            <i class="fab fa-fw fa-linkedin-in"></i>
-                        </a>
-                    </div>
-
-                </div>
+                <small>Copyright &copy; Lucas Cunha Agustini 2022</small>
             </div>
         </footer>
-
-        <!-- Copyright Section -->
-        <section class="copyright py-4 text-center text-white">
-            <div class="container">
-                <small>Copyright &copy; Lucas Cunha Agustini 2020</small>
-            </div>
-        </section>
 
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
         <div class="scroll-to-top d-lg-none position-fixed ">
@@ -519,6 +598,40 @@
                                     <img class="img-fluid rounded mb-5" src="img/portfolio/nes.png" alt="">
                                     <!-- Portfolio Modal - Text -->
                                     <p class="mb-5">N.E.S. is a Nintendo Entertainment System emulator, which emulates the CPU with an interpreter and the PPU via software only. It has pretty good compatibility, although limited in scope by not implementing mappers, which were common on NES cartridges.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio-modal modal fade" id="rGameModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title -->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Spacelines from the Far Out</h2>
+                                    <!-- Icon Divider -->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image -->
+                                    <img class="img-fluid rounded mb-5" src="img/portfolio/inkrivel.png" alt="">
+                                    <!-- Portfolio Modal - Text -->
+                                    <p class="mb-5">Desc</p>
                                 </div>
                             </div>
                         </div>

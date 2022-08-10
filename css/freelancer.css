@@ -24,9 +24,9 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #707070;
-  --secondary: #303030;
-  --tertiary: #000000;
+  --primary: #947EB0;
+  --secondary: #441151;
+  --tertiary: #441151;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
@@ -9716,7 +9716,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .masthead .masthead-avatar {
-  width: 15rem;
+  width: 17rem;
 }
 
 @media (min-width: 992px) {
@@ -9725,7 +9725,7 @@ a.text-dark:hover, a.text-dark:focus {
     padding-bottom: 6rem;
   }
   .masthead .masthead-heading {
-    font-size: 4rem;
+    font-size: 3.8rem;
     line-height: 3.5rem;
   }
   .masthead .masthead-subheading {
@@ -9742,7 +9742,6 @@ a.text-dark:hover, a.text-dark:focus {
   position: relative;
   display: block;
   max-width: 25rem;
-  margin-bottom: 30px;
   border-radius: 0.5rem;
   overflow: hidden;
 }
@@ -9753,7 +9752,7 @@ a.text-dark:hover, a.text-dark:focus {
   left: 0;
   transition: all 0.2s ease-in-out;
   opacity: 0;
-  background-color: rgba(80, 80, 80, 0.9);
+  background-color: rgba(68, 17, 81, 0.5);
 }
 
 .portfolio .portfolio-item .portfolio-item-caption:hover {
