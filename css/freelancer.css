@@ -2910,6 +2910,34 @@ input[type="button"].btn-block {
   border-radius: 0.5rem;
 }
 
+.show-sm {
+  display: none;
+}
+
+.show-md {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .show-sm {
+    display: flex;
+  }
+
+  .show-md {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .show-sm {
+    display: none;
+  }
+
+  .show-md {
+    display: flex;
+  }
+}
+
 .dropdown-menu-left {
   right: auto;
   left: 0;
