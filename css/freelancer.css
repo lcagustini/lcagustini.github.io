@@ -2918,7 +2918,7 @@ input[type="button"].btn-block {
   display: none;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 0px) {
   .show-sm {
     display: flex;
   }
