@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta name="description" content="This is my portfolio!">
+    <meta name="author" content="Lucas Cunha Agustini">
+
+    <title>Lucas Cunha Agustini - Portfolio</title>
+
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Workbench&display=swap" rel="stylesheet">
+
+    <link href="../css/default.css" rel="stylesheet">
+</head>
+
+<body class="center roboto-regular">
+    <br>
+
+    <div class="text-center">
+        <a class="link horizontal-spacing" href="../index.html">Home</a>
+        <a class="link horizontal-spacing" href="">Projects</a>
+        <a class="link horizontal-spacing" href="../career.html">Career</a>
+        <a class="link horizontal-spacing" href="../skills.html">Skills</a>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="text-center">
+        <a class="link horizontal-spacing" href="pixelate.html">Pixelate</a>
+        <a class="link horizontal-spacing" href="dof.html">Depth of Field</a>
+        <a class="link horizontal-spacing" href="parallax.html">Parallax</a>
+    </div>
+
+    <br>
+    <hr>
+
+    <h1 class="title workbench-regular text-center">Per object pixelation</h1>
+    
+    <img class="screenshot" src="../img/pixelate/result-gif.gif" alt="">
+    <p>
+        A stencil based post-processing effect that gives specific objects in a scene a pixelated look, without needing special materials or rendering the whole game at a lower resolution.
+        <br>
+        <br>
+        As an example of how this was done, we have this source scene, which is rendered normally up until the post-processing step
+    </p>
+    <img class="screenshot" src="../img/pixelate/source.png" alt="">
+    <p>
+        Every object that will be pixelated writes to the stencil buffer during the render process, which means at the end of the rendering pipeline, we get a mask of these objects in the frame, including depth testing and culling
+    </p>
+    <img class="screenshot" src="../img/pixelate/stencil.png" alt="">
+    <p>
+        This mask is then downscaled together with the color buffer, which will pixelate all objects, and give us an image source to overlay on top of the original frame
+    </p>
+    <img class="screenshot" src="../img/pixelate/color-pixel.png" alt="">
+    <img class="screenshot" src="../img/pixelate/stencil-pixel.png" alt="">
+    <p>
+        The original stencil mask is then added to this pixel mask, this is done to get the silhouette of the object to be very sharp. If we didn't do this, we would end up with a round cut of the pixelated color buffer, which would look out of place
+    </p>
+    <img class="screenshot" src="../img/pixelate/mask.png" alt="">
+    <p>
+        Now, with this mask done and the pixelated color buffer, we can apply this mask to it and overlay the result on top of the camera buffer
+    </p>
+    <img class="screenshot" src="../img/pixelate/result.png" alt="">
+    <p>
+        After this we can post-process and tone map as usual, giving us the final frame
+    </p>
+    <img class="screenshot" src="../img/pixelate/result-final.png" alt="">
+
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>
