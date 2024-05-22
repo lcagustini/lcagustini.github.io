@@ -1,87 +1,7 @@
-.workbench-regular {
-    font-family: "Workbench", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "BLED" 0, "SCAN" 0;
-}
-
-.roboto-thin {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
-
-.roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-
-.roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.roboto-black {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-}
-
-.roboto-thin-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-}
-
-.roboto-light-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: italic;
-}
-
-.roboto-regular-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.roboto-medium-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-}
-
-.roboto-bold-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: italic;
-}
-
-.roboto-black-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    font-style: italic;
-}
-
 body {
     background-color: antiquewhite;
     font-size: 1.1em;
-    max-width: 40%;
+    max-width: clamp(40%, 2000px - 40vw, 90%);
 }
 
 .avatar {
@@ -89,9 +9,45 @@ body {
     height: auto;
 }
 
+.screenshot-container {
+    display: flex;
+    justify-content: center;
+}
+
 .screenshot {
     width: 100%;
     height: auto;
+    margin: 5px 5px;
+}
+
+.screenshot-small {
+    display: flex;
+    flex-shrink: 0;
+    width: 60%;
+    height: auto;
+    margin: 5px 5px;
+}
+
+.screenshot-extra-small {
+    display: flex;
+    flex-shrink: 0;
+    width: 30%;
+    height: auto;
+    margin: 5px 5px;
+}
+
+.screenshot-side-by-side {
+    display: flex;
+    width: calc(100% - 10px);
+    height: auto;
+    margin: 5px 5px;
+}
+
+.screenshot-text {
+    display: flex;
+    align-self: center;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .link {
@@ -120,7 +76,13 @@ body {
 }
 
 .center {
-    margin: auto;
+    margin: auto
+}
+
+.center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bar-background {

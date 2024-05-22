@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Workbench&display=swap" rel="stylesheet">
 
+    <link href="../css/fonts.css" rel="stylesheet">
     <link href="../css/default.css" rel="stylesheet">
 </head>
 
@@ -44,16 +45,32 @@
     <hr>
 
     <h1 class="title workbench-regular text-center">N.E.S.</h1>
-    <img class="center screenshot" src="../img/emulators/nes.gif" alt="">
-    <p>
-        A NES emulator with working CPU and PPU emulation, but no sound or mapper emulation
-    </p>
+
+    <div class="screenshot-container">
+        <img class="screenshot-small" src="../img/emulators/nes.gif" alt="">
+        <div class="screenshot-text">
+            <p>
+                N.E.S. is a Nintendo Entertainment System emulator, which emulates the CPU with an interpreter and the PPU (graphics) via software only
+                <br>
+                <br>
+                It has pretty good compatibility, although limited in scope by not implementing mappers, which were common on NES cartridges
+            </p>
+        </div>
+    </div>
 
     <h1 class="title workbench-regular text-center">Iron GB</h1>
-    <img class="center screenshot" src="../img/emulators/irongb.gif" alt="">
-    <p>
-        A prototype original Game Boy emulator with step debugger
-    </p>
+
+    <div class="screenshot-container">
+        <div class="screenshot-text">
+            <p>
+                IronGB is an original GameBoy emulator. It emulates the CPU (an 8 bit processor) with an interpreter, while also emulating the PPU (graphics) all through software
+                <br>
+                <br>
+                It implements a debugger that allows the user to step through each instruction
+            </p>
+        </div>
+        <img class="screenshot-small" src="../img/emulators/irongb.gif" alt="">
+    </div>
 
     <br>
     <br>
