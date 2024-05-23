@@ -50,6 +50,35 @@ body {
     margin-right: 5px;
 }
 
+.career-title-grid {
+    display: grid;
+    grid-template-columns: 10% 30% 30% 30%
+}
+
+.career-title-icon {
+    height: auto;
+    width: 80%;
+    margin: auto;
+}
+
+.career-title-company {
+    font-weight: bold;
+    font-size: 1.5em;
+    align-content: center;
+}
+
+.career-title-job {
+    align-content: center;
+    text-align: center;
+}
+
+.career-title-date {
+    font-style: italic;
+    font-size: 0.85em;
+    align-content: center;
+    text-align: right;
+}
+
 .link {
     color: black;
     text-decoration: underline;
