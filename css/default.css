@@ -169,6 +169,10 @@ body {
     top: 0.15em;
 }
 
+.li-multiple-columns {
+    column-count: 3;
+}
+
 @media (max-width: 600px) {
     .screenshot-container {
         display: block;
@@ -208,5 +212,9 @@ body {
     
     .career-title-grid {
         grid-template-columns: 0 40% 30% 30%;
+    }
+
+    .li-multiple-columns {
+        column-count: 2;
     }
 }
