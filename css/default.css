@@ -95,6 +95,11 @@ body {
     width: 6em;
 }
 
+.social-link {
+    color: black;
+    text-decoration: underline;
+}
+
 .title {
     font-size: 3em;
 }
