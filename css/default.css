@@ -95,6 +95,11 @@ body {
     font-size: 3em;
 }
 
+.title-link {
+    color: black;
+    text-decoration: none;
+}
+
 .title-container {
     display: grid;
     grid-template-columns: 85% 15%;
