@@ -4,6 +4,10 @@ body {
     max-width: clamp(40%, 2000px - 40vw, 90%);
 }
 
+p {
+    font-size: 1.1em;
+}
+
 .avatar {
     box-shadow: 0 0 20px gray;
     border-radius: 50%;
