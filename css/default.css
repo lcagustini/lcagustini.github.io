@@ -201,4 +201,12 @@ body {
         text-align: center;
         padding-bottom: 1em;
     }
+    
+    .center-flex {
+        display: block;
+    }
+    
+    .career-title-grid {
+        grid-template-columns: 0 40% 30% 30%;
+    }
 }
