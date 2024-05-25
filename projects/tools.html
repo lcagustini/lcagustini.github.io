@@ -51,8 +51,22 @@
 
     <img class="screenshot" src="../img/tools/goldfish.png" alt="">
     <p>
-        Goldfish is a game engine made from scratch in C and OpenGL
+        Goldfish is a custom game engine I developed from scratch using C and OpenGL. It includes several key features:
     </p>
+    <ul>
+        <li><b>Custom Libraries:</b> Includes bespoke math and data structure libraries.</li>
+        <li><b>ECS System:</b>
+            <ul>
+                <li>Implements an archetype-based Entity Component System</li>
+                <li>Enables transform-based hierarchy.</li>
+                <li>Systems can execute on certain events, or in certain slots of the update loop</li>
+                <li>Systems can also have multiple component-based filters to select entities to process</li>
+            </ul>
+        </li>
+        <li><b>Rendering Interfaces:</b> Provides built-in components for seamless game implementation.</li>
+        <li><b>Debugging Tools:</b> Integrates Dear ImGui for real-time debug information display.</li>
+        <li><b>OpenGL Renderer:</b> Supports fundamental features like transparency and skybox rendering.</li>
+    </ul>
 
     <div class="title-container">
         <h1 class="title workbench-regular text-center">Medieval Defense Mapper</h1>
@@ -63,13 +77,11 @@
         <img class="screenshot-small" src="../img/tools/ndsmapper.png" alt="">
         <div class="screenshot-text">
             <p>
-                A tool to help create collision data for the game Medieval Defense
-                <br>
-                <br>
-                It shows the game map with an overlay that the designer can click to define what type of collision should each tile have
-                <br>
-                <br>
-                The tool then prints ou the collision data that can be copied over to the game and used at runtime
+                A tool designed to create collision data for the game Medieval Defense.
+                <br><br>
+                It displays the game map with an overlay, allowing designers to click on tiles to define their collision types.
+                <br><br>
+                The tool then outputs the collision data, which can be copied into the game for use at runtime.
             </p>
         </div>
     </div>
@@ -82,10 +94,9 @@
     <div class="screenshot-container">
         <div class="screenshot-text">
             <p>
-                GBA image and tile data is store as an assembly file, this tool helps visualize the raw tile data
-                <br>
-                <br>
-                Helped with the development of Hexis
+                This tool visualizes raw tile data stored as assembly files for GBA image and tile data.
+                <br><br>
+                It was instrumental in the development of Hexis, providing a debug view of the graphical elements during the creation process.
             </p>
         </div>
         <img class="screenshot-small" src="../img/tools/gbatile.png" alt="">
@@ -100,10 +111,9 @@
         <img class="screenshot-small" src="../img/tools/imgtochr.png" alt="">
         <div class="screenshot-text">
             <p>
-                A command line tool to convert images to a NES compatible CHR binary format
-                <br>
-                <br>
-                This was used to develop Buzzfall
+                A command-line tool for converting images to NES-compatible CHR binary format.
+                <br><br>
+                This tool was essential in the development of Buzzfall, facilitating the conversion of graphical assets for the game.
             </p>
         </div>
     </div>
@@ -116,7 +126,9 @@
     <div class="screenshot-container">
         <div class="screenshot-text">
             <p>
-                A Discord bot that warns about changes to branches that it's been configured to track
+                A Discord bot that monitors and alerts users to changes in specified branches.
+                <br><br>
+                This bot is useful for tracking the approval of pull requests, ensuring team members stay updated on project progress.
             </p>
         </div>
         <img class="screenshot-small" src="../img/tools/gitwarn.png" alt="">
